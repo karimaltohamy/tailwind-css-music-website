@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .circle {
+        @apply w-[10] h-[10px] rounded-full border-2 border-gray-500
+    }
+
+    .btn-main {
+       @apply h-[35px] md:h-[40px] w-[115px] sm:w-[140px] md:w-[170px] text-[17px] md:text-[20px] bg-main-color rounded-full text-white mr-5 hover:bg-transparent hover:text-main-color hover:border-[3px] hover:border-main-color
+    }
+
+    .btn-outline {
+        @apply h-[35px] md:h-[40px] w-[115px] sm:w-[140px] md:w-[170px] text-[17px] md:text-[20px] border-[3px] border-main-color rounded-full text-main-color hover:bg-main-color hover:text-white transition
+    }
+
+    .item-part-1 {
+        @apply flex items-center justify-start sm:justify-center lg:justify-start relative mb-6 hover:bg-[#90909038] p-1
+    }
+
+    .item-part-2 {
+        @apply flex flex-col w-fit relative mr-6 mt-5 hover:bg-[#77777718] transition
+    }
+
+    .play-circal-1{
+        @apply absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer text-white text-[17px]
+    }
+
+    .play-circal-2 {
+        @apply text-white text-[20px] absolute right-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 cursor-pointer hidden
+    }
+
+}
+

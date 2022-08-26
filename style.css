@@ -1,0 +1,176 @@
+span {
+    display: block;
+}
+
+/* scroll */
+
+/* width */
+.scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+   
+  /* Handle */
+.scroll:hover::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+  /* Handle on hover */
+  .scroll:::-webkit-scrollbar-thumb {
+    background: #555; 
+  }
+
+/* scroll */
+
+
+/* list */
+.list .item-list .music {
+    display: none;
+}
+
+.list .active span {
+    display:none;
+}
+
+.list .active .music {
+    display:block;
+}
+
+.list .active h4 {
+    color: #36e2ec;
+}
+/* list */
+
+/* wave */
+.wave1 {
+    height: 10px;
+    width: 3px;
+    margin-right: 3px;
+    border-radius: 10px 10px 0 0;
+}
+
+.wave1:nth-child(2) {
+    height: 20px;
+}
+
+.wave1:last-child {
+    height: 10px;
+}
+
+.active2 .wave1 {
+    animation: wave .5s linear infinite;
+}
+
+.active2 .wave1:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.active2 .wave1:last-child {
+    animation-delay: .8s;
+}
+
+@keyframes wave {
+    0% {
+        height: 15px;
+    }
+    50% {
+        height: 25px;
+    }
+    100% {
+        height: 15px;
+    }
+}
+/* wave */
+
+/* bar song */ 
+.bar2 {
+    width:0%;
+    transition: .5s linear;
+}
+
+.dot {
+    left: 0%;
+    transition: .5s linear;
+}
+
+.dot:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 3px #36e2ec;
+}
+
+.bar input {
+    transition: 3s linear;
+    opacity: 0;
+}
+/* bar song */ 
+
+/* val song */
+.val2 {
+    width:0%;
+    transition: .5s linear;
+}
+
+.dot-val {
+    left: 0%;
+    transition: .5s linear;
+}
+
+.dot-val:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 3px #36e2ec;
+}
+
+.val input {
+    transition: 3s linear;
+    opacity: 0;
+}
+/* val song */
+
+/* header side song */
+li.active3 {
+    color: white;
+    border-bottom: 4px solid #36e2ec;
+}
+
+.item-song.active4 {
+    background-color : #77777718;
+}
+/* header side song */
+
+
+/* info-song */
+.side-song:before {
+    content: "";
+}
+/* info-song */
+
+.img-play:hover i {
+    display: block;
+}
+
+.pope-song::-webkit-scrollbar,
+.pope-artist::-webkit-scrollbar {
+    display: none;
+}
+
+.item-song,
+.pope-artist li {
+    flex: 0 0 auto;
+}
