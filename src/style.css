@@ -17,7 +17,7 @@ span {
 }
   
   /* Handle on hover */
-  .scroll:::-webkit-scrollbar-thumb {
+  .scroll::-webkit-scrollbar-thumb {
     background: #555; 
   }
 

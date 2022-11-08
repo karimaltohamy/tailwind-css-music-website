@@ -1,8 +1,10 @@
 {
+  "main": "main.js",
   "devDependencies": {
     "tailwindcss": "^3.1.8"
   },
   "scripts": {
-    "build": "Cross-env NODE_ENV=producttion postcss src/input.css -o dist/output.css"
+    "start": "node your-script.js",
+    "build-css": "tailwindcss build -i ./src/input.css -o ./dist/output.css"
   }
 }
